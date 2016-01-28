@@ -58,7 +58,7 @@ Client shared between client and server
 #### persistence
 
 Read/Write functions. There should’t be any database query outside this folder.
-- **reading.js:** (Query namespace) Model should wrap mongo reading queries. That’s the best way to make your application independent from database.
+- **reading.js:** (Query namespace) Model should wrap mongo reading queries. That’s the best way to make your application independent from database. Included here the mongo collection declaration too.
 - **writing.js:** (Write namespace) Same idea applied to database write queries. Keep in mind that writing in client is blocked so this functions will run only inside a simulation or server side.
 
 #### server
