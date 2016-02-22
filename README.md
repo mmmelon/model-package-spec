@@ -50,7 +50,7 @@ Client only code
 #### common
 
 Client shared between client and server
-- **methods.js:** (Methods namespace) Meteor methods.Meteor methods only check parameters and call a function.Never place your code inside a meteor method. Context inside methods functions should not be use. Called userId should be passed as authorId in function parameters.
+- **methods.js:** (Methods namespace) Meteor methods.Meteor methods only check parameters and call a function.Never place your code inside a meteor method. Context inside methods functions should not be use. Caller userId should be passed as authorId in function parameters.
 - **model.js:** Client/Server shared functions, collection declaration and model declaration.
 - **triggers.js:** (Triggers namespace) Collection hooks should be avoided. Instead we use functions that should be called when some action is done.
 - **errors.js:** (Errors namespace) Error types declaration. Never return an string or code as error. You should always throw errors declared inside this file.
